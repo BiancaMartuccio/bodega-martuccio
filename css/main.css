@@ -1,0 +1,589 @@
+body {
+    margin: 0;
+    background-color: #ffffff;
+    /* background-color: #3F0713; */
+    font-family: 'Big Shoulders Text', cursive;
+    font-weight: 400;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: #312f30;
+    /* color: #b3b3b3; */
+}
+
+a {
+    text-decoration:none;
+    text-transform: uppercase;
+}
+
+.botones {
+    width: 120px;
+    padding: 5px 8px;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    border: solid .1px white;
+    border-radius: 5px;
+
+    transition: all .3s ease-in-out;
+}
+
+.botones:hover{
+    color: black;
+    background-color: white;
+    border: solid 1px white;
+}
+
+/*------------------------------*/
+/*-------------MENÚ-------------*/
+/*------------------------------*/
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #1f1e1e;
+    /* background-color: #3F0713; */
+    padding: 0px;
+}
+
+.box-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.logo {
+    width: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.box-menu {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.palabrasMenu {
+
+    color: #ffffff;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+}
+
+.palabrasMenu:hover{
+    color: #960428;
+    /* color:#960428; */
+}
+
+/*------------------------------*/
+/*-------IMAGEN PRINCIPAL-------*/
+/*------------------------------*/
+
+#h1-index {
+    text-align: center;
+    color: white;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+}
+
+.nombre {
+    display: block;    
+    font-size: 7rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.box-portada-imagen {
+    position: relative;
+    height: 100vh;
+    background-color: #e4dddc;
+    background-image: url(../media/bodega6.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.relleno-imagen {
+    position: absolute;
+    background-color: #00000099;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*------------------------------*/
+/*-------CONTENIDO INDEX--------*/
+/*------------------------------*/
+
+
+/*-----------GENERALES-----------*/
+
+h2 {
+    color: #ffffff;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 3.4em;
+    margin: 0;
+}
+
+.index-p {
+    color: #b3b3b3;
+
+}
+
+/*-------NUESTROS PRODUCTOS------*/
+
+.productos {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.productos img {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.productos-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 30px;
+}
+
+.productos-texto p {
+ margin-bottom: 20px;
+ margin-top: 0px;
+}
+
+/*--------BODEGA-------*/
+
+.contenedor-bodega {
+    height: 85vh;
+    background-color: #b6aeb0;
+    background-image: url(../media/bodega4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bodega-sombra {
+    background-color: #00000070;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodega-escrito {
+    background-color: #3f071381;
+    width: 30%;
+    height: 80%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodega-escrito p {
+    text-align: center;
+}
+
+/*--------RESTAURANTE-------*/
+
+.contenedor-restaurante {
+    background-color: #e4dddc;
+    background-image: url(../media/restaurante.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 90vh;
+}
+
+.restaurante-sombra {
+    background-color: #00000079;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.restaurante-escrito {
+    width: 35%;
+    height: 100%;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*------------------------------*/
+/*------------FOOTER------------*/
+/*------------------------------*/
+
+footer {
+    text-align: center;
+    font-size: 1rem;
+    background-color: black;
+    padding: 10px;
+}
+
+footer p {
+    color: white;
+    margin: 0;
+}
+
+/*------------------------------*/
+/*------SECCIONES GENERAL-------*/
+/*------------------------------*/
+
+.secciones-h1 {
+    color: #ffffff;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+
+    background-color: #000000a1;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secciones-h2 {
+    color: #960428;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5em;
+    margin-top: 40px;
+}
+
+.secciones-box {
+    width: 65%;
+    margin: 10px auto;
+}
+
+/*----- NOSOTROS -----*/
+
+.imagen-nosotros{
+    height: 40vh;  
+    background-color: #312f30;
+    background-image: url(../media/nosotrosportada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nosotros-texto {
+    text-align: justify;
+}
+
+.gallery-container {
+
+    margin: 100px 0;
+    padding: 20px;
+
+    -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,1);
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 280px;
+    grid-gap: 20px;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*para que no se deforme la imagen*/
+}
+
+.gallery__item:nth-child(4) {
+    grid-column-start: span 3;
+    order: 1;
+}
+
+.gallery__item:nth-child(1) {
+    grid-column-start: span 1;
+    order: 2;
+ 
+    align-self: center;
+} 
+
+.gallery__item:nth-child(5) {
+    grid-column-start: span 2;
+    order: 3;
+}
+
+.gallery__item:nth-child(2) {
+    grid-column-start: span 1;
+    order: 4;
+
+    align-self: center;
+}
+
+.gallery__item:nth-child(6) {
+    grid-row-start: span 2;
+    order: 5;
+} 
+
+.gallery__item:nth-child(3) {
+    grid-column-start: span 1;
+    order: 6;
+
+    align-self: center;
+} 
+
+.gallery__item:nth-child(7) {
+    grid-column-start: span 2;
+    order: 7;
+} 
+
+/*----- NUESTROS PRODUCTOS -----*/
+
+.imagen-productos{
+    height: 40vh;  
+    background-color: #312f30;
+    background-image: url(../media/nuestrosvinos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.productos-imagenes {
+    width: 110px;
+    height: 150px;
+    margin: 10px 30px;
+    border: solid 1px #000000 ;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.productos-imagenes:hover {
+    transform: scale(1.2);
+}
+
+.tintos, .blancos {
+    display: grid;
+    grid-template-columns: 66% 33%;
+
+    margin: 90px 0;
+    padding: 25px;
+
+    -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,1);
+}
+
+.rosados {
+    display: grid;
+    grid-template-columns: 33% 66%;
+   
+    margin: 90px 0;
+}
+
+.rosados .box-vinos {
+    order:2;
+}
+
+.rosados .box-vinos-texto {
+    text-align: right;
+}
+
+.box-vinos {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-self: center;
+    align-self: center;
+}
+
+/*----- BODEGA -----*/
+
+.imagen-bodega{
+    height: 40vh;  
+    background-color: #312f30;
+    background-image: url(../media/bodegaportada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bodega-texto {
+    margin: 50px auto;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-auto-rows: 150px; /*alto de las filas*/
+
+    margin-bottom: 50px;
+}
+
+.galeria_item {
+    position: relative;
+}
+
+.galeria_img {
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/*----- RESTAURANTE -----*/
+
+.imagen-restaurante{
+    height: 40vh;  
+    background-color: #312f30;
+    background-image: url(../media/restaurante2copia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.restaurante-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 50px 0px;
+}
+
+.slider {
+    
+    margin:left;
+    overflow: hidden;
+    justify-self: center;
+    align-self: center;
+}
+
+.slider ul {
+    display:flex;
+    width:400%;
+    padding:0;
+
+    animation:cambio 10s infinite;
+
+}
+
+.slider li{
+    list-style:none;
+    width: 100%;
+    
+}
+
+.slider img {
+    width:100%;
+
+}
+
+@keyframes cambio{
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
+
+}
+
+.restaurante-texto {
+    justify-self: center;
+    align-self: center;
+    margin: auto 30px;
+    text-align: center;
+}
+
+.descripcion h2 {
+    color: #960428;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5em;
+}
+
+.descripcion {
+
+    -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,1);
+
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.reserva-horario {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.reserva-horario h3{
+    margin:0px;
+}
+
+.reservas, .horarios {    
+    -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,1);
+    padding: 10px;
+}
+
+.icono-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icono-flex p{
+    margin: 8px;
+}
+
+/*----- CONTACTO -----*/
+
+.imagen-contacto {
+    height: 40vh;  
+    background-color: #312f30;
+    background-image: url(../media/contactanos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.formulario {
+    width:70%;
+    height: 450px;
+    border: solid 1px gray;
+    padding: 10px;
+    margin: 15px auto;
+    text-align: center;
+    color: red;
+}
