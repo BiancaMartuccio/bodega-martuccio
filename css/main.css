@@ -294,9 +294,9 @@ footer p {
     margin: 100px 0;
     padding: 20px;
 
-    -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,1);
-    -moz-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,1);
-    box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,1);
+    -webkit-box-shadow: 3px 3px 5px 1px rgba(31,30,30,1);
+    -moz-box-shadow: 3px 3px 5px 1px rgba(31,30,30,1);
+    box-shadow: 3px 3px 5px 1px rgba(31,30,30,1);
     
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -381,9 +381,7 @@ footer p {
     margin: 90px 0;
     padding: 25px;
 
-    -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,1);
-    -moz-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,1);
-    box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,1);
+   border-right: solid 3px #960428;
 }
 
 .rosados {
@@ -391,6 +389,8 @@ footer p {
     grid-template-columns: 33% 66%;
    
     margin: 90px 0;
+
+    border-left: solid 3px #960428;
 }
 
 .rosados .box-vinos {
@@ -533,9 +533,9 @@ footer p {
 
 .descripcion {
 
-    -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,1);
-    -moz-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,1);
-    box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,1);
+    -webkit-box-shadow: 3px 3px 5px 1px rgba(31,30,30,1);
+    -moz-box-shadow: 3px 3px 5px 1px rgba(31,30,30,1);
+    box-shadow: 3px 3px 5px 1px rgba(31,30,30,1);
 
     padding: 10px;
     margin: 10px 0px;
@@ -552,10 +552,11 @@ footer p {
 }
 
 .reservas, .horarios {    
-    -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,1);
-    -moz-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,1);
-    box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,1);
-    padding: 10px;
+    -webkit-box-shadow: 3px 3px 5px 1px rgba(31,30,30,1);
+    -moz-box-shadow: 3px 3px 5px 1px rgba(31,30,30,1);
+    box-shadow: 3px 3px 5px 1px rgba(31,30,30,1);
+    padding: 15px;
+    margin-top:10px;
 }
 
 .icono-flex {
