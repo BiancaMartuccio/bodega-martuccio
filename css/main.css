@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0px auto;
     background-color: #ffffff;
     /* background-color: #3F0713; */
     font-family: 'Big Shoulders Text', cursive;
@@ -8,6 +8,12 @@ body {
     letter-spacing: 1px;
     color: #312f30;
     /* color: #b3b3b3; */
+}
+
+@media (max-width: 420px) {
+    body {
+        font-size:1rem;
+    }
 }
 
 a {
@@ -37,50 +43,19 @@ a {
 /*-------------MENÚ-------------*/
 /*------------------------------*/
 
-nav {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: #1f1e1e;
-    /* background-color: #3F0713; */
-    padding: 0px;
-}
-
-.box-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-}
-
 .logo {
     width: 100px;
-    transition: all 0.2s ease-in-out;
 }
 
-.logo:hover {
-    transform: scale(1.1);
+@media (max-width: 420px) {
+    .logo {
+        width: 70px;
+    }
 }
 
-.box-menu {
-    list-style: none;
-    padding: 0px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.palabrasMenu {
-
-    color: #ffffff;
-    font-family: 'Big Shoulders Display', cursive;
-    font-size: 1.5rem;
-    font-weight: bold;
-    letter-spacing: 2.5px;
-}
-
-.palabrasMenu:hover{
-    color: #960428;
-    /* color:#960428; */
+.bg-black {
+    background: #312f30;
+    background: linear-gradient(90deg, rgba(49,47,48,1) 0%, rgba(0,0,0,1) 100%); 
 }
 
 /*------------------------------*/
@@ -243,6 +218,12 @@ footer p {
     margin: 0;
 }
 
+@media (max-width: 420px) {
+    footer {
+        font-size: .6rem;
+    }
+}
+
 /*------------------------------*/
 /*------SECCIONES GENERAL-------*/
 /*------------------------------*/
@@ -261,6 +242,12 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 420px) {
+    .secciones-h1 {
+        font-size:2.5rem;
+    }
 }
 
 .secciones-h2 {
@@ -452,21 +439,21 @@ footer p {
     background-size: cover;
 }
 
-.restaurante-main {
+/* .restaurante-main {
     width: 100%;
     display: grid;
     grid-template-columns: 60% 40%;
     margin: 50px 0px;
-}
+} */
 
-.slider {
+/* .slider {
     
     margin:left;
     overflow: hidden;
     justify-self: center;
     align-self: center;
-}
-
+} */
+/* 
 .slider ul {
     display:flex;
     width:400%;
@@ -474,20 +461,20 @@ footer p {
 
     animation:cambio 10s infinite;
 
-}
+} */
 
-.slider li{
+/* .slider li{
     list-style:none;
     width: 100%;
     
-}
+} */
 
-.slider img {
+/* .slider img {
     width:100%;
 
-}
+} */
 
-@keyframes cambio{
+/* @keyframes cambio{
     0% {
         margin-left: 0;
     }
@@ -516,14 +503,14 @@ footer p {
         margin-left: -300%;
     }
 
-}
+} */
 
-.restaurante-texto {
+/* .restaurante-texto {
     justify-self: center;
     align-self: center;
     margin: auto 30px;
     text-align: center;
-}
+} */
 
 .descripcion h2 {
     color: #960428;
@@ -531,7 +518,13 @@ footer p {
     font-size: 2.5em;
 }
 
-.descripcion {
+@media (max-width: 420px) {
+    .descripcion h2 {
+        font-size:1.8rem;
+    }
+}
+
+/* .descripcion {
 
     -webkit-box-shadow: 3px 3px 5px 1px rgba(31,30,30,1);
     -moz-box-shadow: 3px 3px 5px 1px rgba(31,30,30,1);
@@ -539,35 +532,41 @@ footer p {
 
     padding: 10px;
     margin: 10px 0px;
-}
+} */
 
-.reserva-horario {
+/* .reserva-horario {
     display: flex;
     justify-content: space-between;
     text-align: center;
-}
+} */
 
 .reserva-horario h3{
     margin:0px;
 }
 
-.reservas, .horarios {    
+@media (min-width: 420px) {
+    h3 {
+        font-size: 1.3rem;
+    }    
+}
+
+/* .reservas, .horarios {    
     -webkit-box-shadow: 3px 3px 5px 1px rgba(31,30,30,1);
     -moz-box-shadow: 3px 3px 5px 1px rgba(31,30,30,1);
     box-shadow: 3px 3px 5px 1px rgba(31,30,30,1);
     padding: 15px;
     margin-top:10px;
-}
+} */
 
-.icono-flex {
+/* .icono-flex {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.icono-flex p{
+/* .icono-flex p{
     margin: 8px;
-}
+} */
 
 /*----- CONTACTO -----*/
 
