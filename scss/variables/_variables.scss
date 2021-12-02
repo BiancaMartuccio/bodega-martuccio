@@ -1,0 +1,14 @@
+
+@import "colores";
+
+
+
+$padding:10px;
+$margin-top:15px;
+
+
+
+@mixin ancho-alto($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}

@@ -1,589 +1,561 @@
-body {
-    margin: 0px auto;
-    background-color: #ffffff;
-    /* background-color: #3F0713; */
-    font-family: 'Big Shoulders Text', cursive;
-    font-weight: 400;
-    font-size: 1.3rem;
-    letter-spacing: 1px;
-    color: #312f30;
-    /* color: #b3b3b3; */
-}
-
-@media (max-width: 420px) {
-    body {
-        font-size:1rem;
-    }
-}
-
-a {
-    text-decoration:none;
-    text-transform: uppercase;
-}
-
-.botones {
-    width: 120px;
-    padding: 5px 8px;
-    text-align: center;
-    color: white;
-    background-color: transparent;
-    border: solid .1px white;
-    border-radius: 5px;
-
-    transition: all .3s ease-in-out;
-}
-
-.botones:hover{
-    color: black;
-    background-color: white;
-    border: solid 1px white;
-}
-
-/*------------------------------*/
-/*-------------MENÚ-------------*/
-/*------------------------------*/
-
+/*-------NAV-------*/
 .logo {
-    width: 100px;
-}
+  width: 23%;
+  transition: all 0.3s ease-in-out; }
 
-@media (max-width: 420px) {
-    .logo {
-        width: 70px;
-    }
-}
+.logo:hover {
+  transform: scale(1.1); }
 
-.bg-black {
-    background: #312f30;
-    background: linear-gradient(90deg, rgba(49,47,48,1) 0%, rgba(0,0,0,1) 100%); 
-}
+@media (max-width: 480px) {
+  .logo {
+    width: 50%; } }
 
-/*------------------------------*/
-/*-------IMAGEN PRINCIPAL-------*/
-/*------------------------------*/
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff; }
 
-#h1-index {
-    text-align: center;
-    color: white;
-    font-family: 'Big Shoulders Display', cursive;
-    font-size: 2rem;
-}
+.nav-link {
+  color: #ffffff; }
 
-.nombre {
-    display: block;    
-    font-size: 7rem;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+  color: #960428; }
 
-.box-portada-imagen {
-    position: relative;
-    height: 100vh;
-    background-color: #e4dddc;
-    background-image: url(../media/bodega6.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-}
+/*------------GENERALES------------*/
+::selection {
+  background: #252425;
+  /*Color del fondo de lo seleccionado*/
+  color: #ffffff;
+  /*Color de la letra seleccionada*/ }
 
-.relleno-imagen {
-    position: absolute;
-    background-color: #00000099;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+body {
+  margin: 0px auto;
+  background-color: #ffffff;
+  font-family: 'Big Shoulders Text', cursive;
+  font-weight: 400;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  color: #252425; }
 
-/*------------------------------*/
-/*-------CONTENIDO INDEX--------*/
-/*------------------------------*/
-
-
-/*-----------GENERALES-----------*/
+@media (max-width: 480px) {
+  body {
+    font-size: 1rem; } }
 
 h2 {
-    color: #ffffff;
-    font-family: 'Big Shoulders Display', cursive;
-    font-size: 3.4em;
-    margin: 0;
-}
+  color: #ffffff;
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 3.4em;
+  margin: 0; }
 
-.index-p {
-    color: #b3b3b3;
+a {
+  text-decoration: none;
+  text-transform: uppercase; }
 
-}
+.a-footer {
+  text-transform: none;
+  color: #ffffff; }
 
-/*-------NUESTROS PRODUCTOS------*/
+.a-footer:hover {
+  color: #960428; }
 
-.productos {
-    background-color: black;
-    display: grid;
-    grid-template-columns: 60% 40%;
-}
+/*-------GENERALES PAGES-------*/
+.secciones-h1 {
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0;
+  background-color: #000000a1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-.productos img {
-    display: flex;
-    align-items: center;
+@media (max-width: 480px) {
+  .secciones-h1 {
+    font-size: 3rem; } }
+
+.secciones-h2 {
+  color: #960428;
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.5em;
+  margin-top: 20px; }
+
+@media (max-width: 480px) {
+  .secciones-h2 {
+    font-size: 2.5rem; } }
+
+.secciones-box {
+  width: 65%;
+  margin: 10px auto; }
+
+@media (max-width: 480px) {
+  .secciones-box {
     width: 100%;
-}
+    margin: 10px auto; } }
 
-.productos-texto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px 30px;
-}
+/*-------BOTONES-------*/
+.botones, .flex-contacto form .div-boton-contacto .boton-contacto {
+  width: 120px;
+  padding: 5px 8px;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  border: solid .1px white;
+  border-radius: 5px;
+  transition: all .3s ease-in-out; }
 
-.productos-texto p {
- margin-bottom: 20px;
- margin-top: 0px;
-}
+.botones:hover, .flex-contacto form .div-boton-contacto .boton-contacto:hover {
+  color: black;
+  background-color: white;
+  border: solid 1px white; }
 
-/*--------BODEGA-------*/
+@media (max-width: 480px) {
+  .botones, .flex-contacto form .div-boton-contacto .boton-contacto {
+    width: 100%; } }
 
-.contenedor-bodega {
-    height: 85vh;
-    background-color: #b6aeb0;
-    background-image: url(../media/bodega4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.bodega-sombra {
-    background-color: #00000070;
+/*-------IMAGEN PRINCIPAL-------*/
+.box-portada-imagen {
+  position: relative;
+  height: 100vh;
+  background-color: #cfcfcf;
+  background-image: url(../media/bodega6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .box-portada-imagen .relleno-imagen {
     width: 100%;
     height: 100%;
+    position: absolute;
+    background-color: #00000099;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
+    align-items: center; }
+    .box-portada-imagen .relleno-imagen #h1-index {
+      text-align: center;
+      color: white;
+      font-family: 'Big Shoulders Display', cursive;
+      font-size: 2rem; }
+      .box-portada-imagen .relleno-imagen #h1-index .nombre {
+        display: block;
+        font-size: 7rem;
+        text-transform: uppercase;
+        letter-spacing: 5px; }
 
-.bodega-escrito {
-    background-color: #3f071381;
-    width: 30%;
-    height: 80%;
-    
+@media (max-width: 480px) {
+  #h1-index {
+    font-size: 1.5rem; }
+    #h1-index .nombre {
+      font-size: 4.5rem; }
+      #h1-index .nombre .la {
+        display: block; } }
+
+/*-------CONTENIDO INDEX--------*/
+/*-------NUESTROS PRODUCTOS------*/
+.productos {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 60% 40%; }
+  .productos img {
+    display: flex;
+    align-items: center;
+    width: 100%; }
+  .productos .productos-texto {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
+    padding: 0px 30px; }
+    .productos .productos-texto p {
+      margin-bottom: 20px;
+      margin-top: 0px;
+      color: #cfcfcf; }
 
-.bodega-escrito p {
-    text-align: center;
-}
+@media (max-width: 480px) {
+  .productos {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent; }
+    .productos h2 {
+      color: #960428;
+      font-size: 2.6em;
+      margin: 0;
+      text-align: center;
+      margin-top: 12px; }
+    .productos p {
+      font-size: 1em; }
+    .productos .botones, .productos .flex-contacto form .div-boton-contacto .boton-contacto, .flex-contacto form .div-boton-contacto .productos .boton-contacto {
+      color: #252425;
+      border: solid 0.1px #252425;
+      margin-bottom: 20px; } }
+
+/*--------BODEGA-------*/
+.contenedor-bodega {
+  height: 85vh;
+  background-color: #cfcfcf;
+  background-image: url(../media/bodega4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .contenedor-bodega .bodega-sombra {
+    width: 100%;
+    height: 100%;
+    background-color: #00000070;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .contenedor-bodega .bodega-sombra .bodega-escrito {
+      background-color: #3f071381;
+      width: 30%;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .contenedor-bodega .bodega-sombra .bodega-escrito p {
+        text-align: center;
+        color: #cfcfcf; }
+
+@media (max-width: 480px) {
+  .contenedor-bodega .bodega-sombra .bodega-escrito {
+    background-color: #3f071381;
+    width: 100%;
+    height: 60%;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .contenedor-bodega .bodega-sombra .bodega-escrito h2 {
+      font-size: 2.6em; }
+    .contenedor-bodega .bodega-sombra .bodega-escrito p {
+      font-size: 1em; } }
 
 /*--------RESTAURANTE-------*/
-
 .contenedor-restaurante {
-    background-color: #e4dddc;
-    background-image: url(../media/restaurante.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    height: 90vh;
-}
-
-.restaurante-sombra {
+  background-color: #cfcfcf;
+  background-image: url(../media/restaurante.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh; }
+  .contenedor-restaurante .restaurante-sombra {
     background-color: #00000079;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: start;
-    align-items: center;
-}
+    align-items: center; }
+    .contenedor-restaurante .restaurante-sombra .restaurante-escrito {
+      width: 35%;
+      height: 100%;
+      margin-left: 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .contenedor-restaurante .restaurante-sombra .restaurante-escrito p {
+        color: #cfcfcf; }
 
-.restaurante-escrito {
-    width: 35%;
-    height: 100%;
-    margin-left: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/*------------------------------*/
-/*------------FOOTER------------*/
-/*------------------------------*/
-
-footer {
-    text-align: center;
-    font-size: 1rem;
-    background-color: black;
-    padding: 10px;
-}
-
-footer p {
-    color: white;
-    margin: 0;
-}
-
-@media (max-width: 420px) {
-    footer {
-        font-size: .6rem;
-    }
-}
-
-/*------------------------------*/
-/*------SECCIONES GENERAL-------*/
-/*------------------------------*/
-
-.secciones-h1 {
-    color: #ffffff;
-    font-size: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin: 0;
-
-    background-color: #000000a1;
-    height: 100%;
+@media (max-width: 480px) {
+  .contenedor-restaurante .restaurante-sombra .restaurante-escrito {
     width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    height: 80%;
+    padding: 0px 30px;
+    margin: 0px; }
+    .contenedor-restaurante .restaurante-sombra .restaurante-escrito h2 {
+      font-size: 2.6em;
+      text-align: center; }
+    .contenedor-restaurante .restaurante-sombra .restaurante-escrito p {
+      font-size: 1em; } }
 
-@media (max-width: 420px) {
-    .secciones-h1 {
-        font-size:2.5rem;
-    }
-}
+/*------------FOOTER------------*/
+footer {
+  text-align: center; }
+  footer .redes-sociales {
+    background-color: #252425;
+    padding: 30px; }
+    footer .redes-sociales p {
+      text-transform: uppercase;
+      color: white;
+      margin-bottom: 10px; }
+    footer .redes-sociales .redes {
+      display: flex;
+      justify-content: space-evenly;
+      width: 20%;
+      margin: 0 auto; }
+      footer .redes-sociales .redes .twitter, footer .redes-sociales .redes .facebook, footer .redes-sociales .redes .instagram {
+        background-color: #ffffff;
+        border-radius: 100%;
+        padding: 10px; }
+        footer .redes-sociales .redes .twitter svg, footer .redes-sociales .redes .facebook svg, footer .redes-sociales .redes .instagram svg {
+          margin: 0px;
+          padding: 0px; }
+      footer .redes-sociales .redes .twitter:hover, footer .redes-sociales .redes .facebook:hover, footer .redes-sociales .redes .instagram:hover {
+        background-color: #cfcfcf; }
+  footer .terminos {
+    padding: 10px;
+    background-color: black;
+    font-size: 1rem; }
+    footer .terminos p {
+      color: white;
+      margin: 0; }
 
-.secciones-h2 {
-    color: #960428;
-    font-family: 'Big Shoulders Display', cursive;
-    font-size: 2.5em;
-    margin-top: 40px;
-}
-
-.secciones-box {
-    width: 65%;
-    margin: 10px auto;
-}
+@media (max-width: 480px) {
+  footer .redes-sociales {
+    padding: 20px; }
+    footer .redes-sociales p {
+      font-size: .95rem; }
+    footer .redes-sociales .redes {
+      width: 90%; }
+      footer .redes-sociales .redes .twitter, footer .redes-sociales .redes .facebook, footer .redes-sociales .redes .instagram {
+        padding: 5px; }
+  footer .terminos p {
+    font-size: .7rem; }
+    footer .terminos p .barra {
+      display: none; }
+    footer .terminos p span {
+      display: flex;
+      justify-content: center; } }
 
 /*----- NOSOTROS -----*/
+.imagen-nosotros {
+  height: 40vh;
+  background-color: #252425;
+  background-image: url(../media/nosotrosportada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
-.imagen-nosotros{
-    height: 40vh;  
-    background-color: #312f30;
-    background-image: url(../media/nosotrosportada.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.nosotros-texto {
-    text-align: justify;
-}
-
-.gallery-container {
-
-    margin: 100px 0;
-    padding: 20px;
-
-    -webkit-box-shadow: 3px 3px 5px 1px rgba(31,30,30,1);
-    -moz-box-shadow: 3px 3px 5px 1px rgba(31,30,30,1);
-    box-shadow: 3px 3px 5px 1px rgba(31,30,30,1);
-    
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 280px;
-    grid-gap: 20px;
-}
-
-.gallery__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /*para que no se deforme la imagen*/
-}
-
-.gallery__item:nth-child(4) {
+.secciones-box .gallery-container {
+  margin: 100px 0;
+  padding: 20px;
+  -webkit-box-shadow: 3px 3px 5px 1px #1f1e1e;
+  -moz-box-shadow: 3px 3px 5px 1px #1f1e1e;
+  box-shadow: 3px 3px 5px 1px #1f1e1e;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 280px;
+  grid-gap: 20px; }
+  .secciones-box .gallery-container .gallery__item:nth-child(4) {
     grid-column-start: span 3;
-    order: 1;
-}
-
-.gallery__item:nth-child(1) {
+    order: 1; }
+  .secciones-box .gallery-container .gallery__item:nth-child(1) {
     grid-column-start: span 1;
     order: 2;
- 
-    align-self: center;
-} 
-
-.gallery__item:nth-child(5) {
+    align-self: center; }
+  .secciones-box .gallery-container .gallery__item:nth-child(5) {
     grid-column-start: span 2;
-    order: 3;
-}
-
-.gallery__item:nth-child(2) {
+    order: 3; }
+  .secciones-box .gallery-container .gallery__item:nth-child(2) {
     grid-column-start: span 1;
     order: 4;
-
-    align-self: center;
-}
-
-.gallery__item:nth-child(6) {
+    align-self: center; }
+  .secciones-box .gallery-container .gallery__item:nth-child(6) {
     grid-row-start: span 2;
-    order: 5;
-} 
-
-.gallery__item:nth-child(3) {
+    order: 5; }
+  .secciones-box .gallery-container .gallery__item:nth-child(3) {
     grid-column-start: span 1;
     order: 6;
-
-    align-self: center;
-} 
-
-.gallery__item:nth-child(7) {
+    align-self: center; }
+  .secciones-box .gallery-container .gallery__item:nth-child(7) {
     grid-column-start: span 2;
-    order: 7;
-} 
+    order: 7; }
+  .secciones-box .gallery-container .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*para que no se deforme la imagen*/ }
+  .secciones-box .gallery-container .nosotros-texto {
+    text-align: justify; }
+
+@media (max-width: 480px) {
+  .secciones-box .gallery-container {
+    margin: 10px 0px;
+    -webkit-box-shadow: 3px 3px 5px 1px white;
+    -moz-box-shadow: 3px 3px 5px 1px white;
+    box-shadow: 3px 3px 5px 1px white;
+    display: flex;
+    flex-direction: column;
+    padding: 0px; }
+    .secciones-box .gallery-container .gallery__item:nth-child(1) {
+      width: 95%; }
+    .secciones-box .gallery-container .gallery__item:nth-child(2) {
+      width: 95%; }
+    .secciones-box .gallery-container .gallery__item:nth-child(3) {
+      width: 95%; } }
 
 /*----- NUESTROS PRODUCTOS -----*/
-
-.imagen-productos{
-    height: 40vh;  
-    background-color: #312f30;
-    background-image: url(../media/nuestrosvinos.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+.imagen-productos {
+  height: 40vh;
+  background-color: #252425;
+  background-image: url(../media/nuestrosvinos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .productos-imagenes {
-    width: 110px;
-    height: 150px;
-    margin: 10px 30px;
-    border: solid 1px #000000 ;
-
-    transition: all 0.2s ease-in-out;
-}
+  width: 110px;
+  height: 150px;
+  margin: 10px 30px;
+  border: solid 1px #252425;
+  transition: all 0.2s ease-in-out; }
 
 .productos-imagenes:hover {
-    transform: scale(1.2);
-}
-
-.tintos, .blancos {
-    display: grid;
-    grid-template-columns: 66% 33%;
-
-    margin: 90px 0;
-    padding: 25px;
-
-   border-right: solid 3px #960428;
-}
-
-.rosados {
-    display: grid;
-    grid-template-columns: 33% 66%;
-   
-    margin: 90px 0;
-
-    border-left: solid 3px #960428;
-}
-
-.rosados .box-vinos {
-    order:2;
-}
-
-.rosados .box-vinos-texto {
-    text-align: right;
-}
+  transform: scale(1.2); }
 
 .box-vinos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-self: center;
+  align-self: center; }
+
+.blancos, .tintos, .rosados {
+  display: grid;
+  grid-template-columns: 66% 33%;
+  margin: 90px 0;
+  padding: 25px;
+  border-right: solid 3px #960428; }
+
+.rosados {
+  display: grid;
+  grid-template-columns: 33% 66%;
+  margin: 90px 0;
+  border-right: none;
+  border-left: solid 3px #960428; }
+  .rosados .box-vinos {
+    order: 2; }
+  .rosados .box-vinos-texto {
+    text-align: right; }
+
+.width-preguntas {
+  width: 75%; }
+
+.accordion-button {
+  font-size: 1.5rem !important;
+  color: #252425;
+  background-color: #ffffff;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 1000s ease-in-out, box-shadow 1000s ease-in-out, border-radius 0.15s ease; }
+
+.accordion-button:not(.collapsed) {
+  color: #ffffff;
+  background-color: #252425; }
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  transform: rotate(-180deg); }
+
+@media (max-width: 480px) {
+  .blancos, .tintos, .rosados {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 10px;
+    margin: 10px 0px; }
+  .rosados {
+    border-top: solid 3px #960428;
+    border-bottom: solid 3px #960428; }
+  .box-vinos {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-self: center;
     align-self: center;
-}
+    order: 2; }
+  .box-vinos-texto h2 {
+    text-align: center; }
+  .box-vinos-texto p {
+    text-align: center; }
+  .width-preguntas {
+    width: 93%; }
+  .accordion-button {
+    font-size: 1.1rem !important; } }
 
 /*----- BODEGA -----*/
-
-.imagen-bodega{
-    height: 40vh;  
-    background-color: #312f30;
-    background-image: url(../media/bodegaportada.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+.imagen-bodega {
+  height: 40vh;
+  background-color: #252425;
+  background-image: url(../media/bodegaportada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .bodega-texto {
-    margin: 50px auto;
-    text-align: center;
-    font-size: 1.3em;
-}
+  width: 65%;
+  margin: 50px auto;
+  text-align: center;
+  font-size: 1.3em; }
 
 .galeria {
-    display: grid;
-    grid-template-columns:repeat(3, 1fr);
-    grid-auto-rows: 150px; /*alto de las filas*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 150px;
+  /*alto de las filas*/
+  margin: 10px 0px 0px 0px; }
+  .galeria .galeria_item {
+    position: relative; }
+    .galeria .galeria_item .galeria_img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
 
-    margin-bottom: 50px;
-}
-
-.galeria_item {
-    position: relative;
-}
-
-.galeria_img {
-    width: 100%;
-    height:100%;
-    object-fit:cover;
-}
+@media (max-width: 480px) {
+  .bodega-texto {
+    width: 95%; }
+  .galeria {
+    grid-template-columns: repeat(2, 1fr); } }
 
 /*----- RESTAURANTE -----*/
-
-.imagen-restaurante{
-    height: 40vh;  
-    background-color: #312f30;
-    background-image: url(../media/restaurante2copia.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* .restaurante-main {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    margin: 50px 0px;
-} */
-
-/* .slider {
-    
-    margin:left;
-    overflow: hidden;
-    justify-self: center;
-    align-self: center;
-} */
-/* 
-.slider ul {
-    display:flex;
-    width:400%;
-    padding:0;
-
-    animation:cambio 10s infinite;
-
-} */
-
-/* .slider li{
-    list-style:none;
-    width: 100%;
-    
-} */
-
-/* .slider img {
-    width:100%;
-
-} */
-
-/* @keyframes cambio{
-    0% {
-        margin-left: 0;
-    }
-    20% {
-        margin-left: 0;
-    }
-
-    25% {
-        margin-left: -100%;
-    }
-    45% {
-        margin-left: -100%;
-    }
-
-    50% {
-        margin-left: -200%;
-    }
-    70% {
-        margin-left: -200%;
-    }
-
-    75% {
-        margin-left: -300%;
-    }
-    100% {
-        margin-left: -300%;
-    }
-
-} */
-
-/* .restaurante-texto {
-    justify-self: center;
-    align-self: center;
-    margin: auto 30px;
-    text-align: center;
-} */
+.imagen-restaurante {
+  height: 40vh;
+  background-color: #252425;
+  background-image: url(../media/restaurante2copia.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .descripcion h2 {
-    color: #960428;
-    font-family: 'Big Shoulders Display', cursive;
-    font-size: 2.5em;
-}
-
-@media (max-width: 420px) {
-    .descripcion h2 {
-        font-size:1.8rem;
-    }
-}
-
-/* .descripcion {
-
-    -webkit-box-shadow: 3px 3px 5px 1px rgba(31,30,30,1);
-    -moz-box-shadow: 3px 3px 5px 1px rgba(31,30,30,1);
-    box-shadow: 3px 3px 5px 1px rgba(31,30,30,1);
-
-    padding: 10px;
-    margin: 10px 0px;
-} */
-
-/* .reserva-horario {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-} */
-
-.reserva-horario h3{
-    margin:0px;
-}
-
-@media (min-width: 420px) {
-    h3 {
-        font-size: 1.3rem;
-    }    
-}
-
-/* .reservas, .horarios {    
-    -webkit-box-shadow: 3px 3px 5px 1px rgba(31,30,30,1);
-    -moz-box-shadow: 3px 3px 5px 1px rgba(31,30,30,1);
-    box-shadow: 3px 3px 5px 1px rgba(31,30,30,1);
-    padding: 15px;
-    margin-top:10px;
-} */
-
-/* .icono-flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-/* .icono-flex p{
-    margin: 8px;
-} */
+  color: #960428;
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.5em; }
 
 /*----- CONTACTO -----*/
-
 .imagen-contacto {
-    height: 40vh;  
-    background-color: #312f30;
-    background-image: url(../media/contactanos.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; 
-}
+  height: 40vh;
+  background-color: #252425;
+  background-image: url(../media/contactanos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
-.formulario {
-    width:70%;
-    height: 450px;
-    border: solid 1px gray;
+.flex-contacto {
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 35% 65%; }
+  .flex-contacto form {
+    width: 90%;
+    height: auto;
+    border: solid 1px #cfcfcf;
+    border-radius: 5px;
     padding: 10px;
     margin: 15px auto;
     text-align: center;
-    color: red;
-}
+    color: #960428; }
+    .flex-contacto form .form-control:focus {
+      color: #252425;
+      background-color: #ffffff;
+      border-color: #312f308f;
+      outline: 0;
+      box-shadow: 0 0 0 0.25rem #312f308f; }
+    .flex-contacto form .div-boton-contacto {
+      display: flex;
+      justify-content: right;
+      margin: 10px 0px; }
+      .flex-contacto form .div-boton-contacto .boton-contacto {
+        color: #252425;
+        border: solid 0.1px #252425; }
+      .flex-contacto form .div-boton-contacto .boton-contacto:hover {
+        color: #ffffff;
+        background-color: #252425;
+        border: solid 1px #252425; }
+  .flex-contacto .mapa {
+    background-color: #252425; }
+
+@media (max-width: 480px) {
+  .flex-contacto {
+    width: 100%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 100%; }
+    .flex-contacto .mapa {
+      height: 50vh; } }
