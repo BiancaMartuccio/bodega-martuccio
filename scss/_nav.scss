@@ -31,7 +31,16 @@ header {
     } 
 }
 @media (max-width: 480px) {
-    .logo {
-        width: 50%;
+header {
+    .navbar-dark {
+        div {
+            div {
+                .logo {
+                    width: 50%;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
     }
+}
 }
